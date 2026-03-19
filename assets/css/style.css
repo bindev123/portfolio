@@ -165,10 +165,11 @@ html {
     scroll-behavior: smooth;
 }
 
-section, footer {
+section,
+footer {
     /* If you have a fixed top nav, this prevents the 
        header from covering the section title */
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 80px;
 }
 
 body {
@@ -190,6 +191,12 @@ header {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 15px;
     font-weight: 500;
+
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+    /* Smooth transition for the effect */
+    z-index: 1000;
 }
 
 header .container {
@@ -216,11 +223,12 @@ header .menu {
 
 header .menu a {
     text-decoration: none;
+    /* font-weight: 600; */
     color: #ffffff;
     transition: color 0.3s linear;
 }
 
-header .menu a:hover {
+header .menu a:hover, header .menu a.active {
     color: var(--primary);
 }
 
