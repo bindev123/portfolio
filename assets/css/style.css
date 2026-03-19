@@ -326,3 +326,53 @@ footer .email:hover {
     height: 40px;
     object-fit: contain;
 }
+
+/** Projects Block **/
+.projects-block {
+    padding: 100px 0;
+}
+
+.projects-block h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    transition: color 0.3s linear;
+}
+
+.projects a:hover {
+    color: var(--primary);
+}
+
+.projects li {
+    border-radius: 20px;
+    background-color: var(--light-dark);
+    /* Formula: (Total Width - Total Gaps) / Number of Columns */
+    width: calc((100% - 30px) / 2);
+    flex-shrink: 0; /* Prevents items from squishing smaller than the calc */
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects .content {
+    padding: 12px 24px;
+}
+
+.projects .content span {
+    font-size: 10px;
+}
