@@ -1,0 +1,235 @@
+/** Reset **/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** Project Stlyes **/
+:root {
+    --primary: #F77F00;
+    --light-dark: #1E1E1D;
+    --dark: #161513;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: var(--dark);
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header {
+    background-color: var(--light-dark);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .site-logo {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+}
+
+header .site-logo img {
+    width: 100%;
+}
+
+header .menu {
+    display: flex;
+    column-gap: 40px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s linear;
+}
+
+header .menu a:hover {
+    color: var(--primary);
+}
+
+footer h4 {
+    margin-bottom: 35px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .email {
+    margin-top: 22px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+footer .email:hover {
+    color: var(--primary);
+}
+
+.social-icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    transition: color 0.3s linear;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+}
+
+.container {
+    max-width: 810px;
+    margin: 0 auto;
+}

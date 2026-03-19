@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Portfolio</title>
 </head>
 
-<body class="bg-[#161513]">
-    <header class="bg-[#1E1E1D]">
-        <div class="container mx-auto px-4 flex items-center">
-            <a href="/"><img src="assets/images/site-logo.png" alt="Site Logo"></a>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="site-logo"><img src="assets/images/site-logo.png" alt="Site Logo"></a>
 
-            <ul class="flex flex-1 justify-end gap-[70px]">
+            <ul class="menu">
                 <li><a href="#home" class="text-white text-[15px] font-semibold">Home</a></li>
                 <li><a href="#projects" class="text-white text-[15px] font-semibold">Projects</a></li>
                 <li><a href="#experience" class="text-white text-[15px] font-semibold">Experience</a></li>
@@ -31,10 +27,32 @@
             </ul>
         </div>
     </header>
-    <main>gi
+
+    <main>
 
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="container">
+            <h4>Contact</h4>
+
+            <p>Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
+                and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
+                comprehensive skill set encompassing front-end and back-end technologies </p>
+
+            <a href="mailto:binaya.maharjan.dev@gmail.com" class="email"><i
+                    data-feather="mail"></i></span>binaya.maharjan.dev@gmail.com</a>
+
+            <ul class="social-icons">
+                <li><a href="#"><i data-feather="instagram"></i></a></li>
+                <li><a href=""><i data-feather="x"></i></a></li>
+                <li><a href=""><i data-feather="youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 </html>
