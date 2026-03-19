@@ -139,8 +139,9 @@ table {
 }
 
 .container {
-    max-width: 810px;
+    max-width: 850px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .gradient-text {
@@ -457,4 +458,28 @@ footer .email:hover {
     flex-grow: 1;
     font-size: 22px;
     font-weight: 600;
+}
+
+/** Responsive Design **/
+@media only screen and (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header .site-logo {
+        width: 60px;
+    }
+
+    header .menu {
+        margin-bottom: 30px;
+    }
+
+  .projects {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .projects li {
+    width: 100%;
+  }
 }
