@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>BinDev Portfolio</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="/" class="site-logo"><img src="assets/images/site-logo.png" alt="Site Logo"></a>
+            <a href="/" class="site-logo wow animate__animated animate__fadeIn"><img src="assets/images/site-logo.png"
+                    alt="Site Logo"></a>
 
-            <ul class="menu">
+            <ul class="menu wow animate__animated animate__fadeIn">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -31,28 +35,32 @@
     <main>
         <section id="home" class="about-block">
             <div class="container">
-                <span class="profile-image">
+                <span class="profile-image wow animate__animated animate__fadeIn">
                     <img src="assets/images/avatar.png" alt="Profile Image">
                 </span>
 
-                <h2>I do code and<br />make content <span class="gradient-text">about it!</span></h2>
+                <h2 class="wow animate__animated animate__fadeInUp">I do code and<br />make content <span
+                        class="gradient-text">about it!</span></h2>
 
-                <p>I am a seasoned full-stack software engineer with over
+                <p class="wow animate__animated animate__fadeInUp">I am a seasoned full-stack software engineer with
+                    over
                     8 years of professional experience, specializing in backend development.
                     My expertise lies in crafting robust and scalable SaaS-based
                     architectures on the Amazon AWS platform.</p>
 
                 <div class="btn-wrap">
-                    <a href="#" class="btn btn--light btn--bg">Get in Touch</a>
-                    <a href="#" class="btn btn--light btn--outline">Download CV</a>
+                    <a href="#" class="btn btn--light btn--bg wow animate__animated animate__fadeInLeft">Get in
+                        Touch</a>
+                    <a href="#" class="btn btn--light btn--outline wow animate__animated animate__fadeInRight">Download
+                        CV</a>
                 </div>
             </div>
         </section>
 
         <section class="expertise-block">
             <div class="container">
-                <h3>EXPERTISE WITH</h3>
-                <div class="expertises">
+                <h3 class="wow animate__animated animate__fadeInUp">EXPERTISE WITH</h3>
+                <div class="expertises wow animate__animated animate__fadeInUp">
                     <img src="assets/images/javascript.png" alt="JavaScript">
                     <img src="assets/images/nodejs.png" alt="JavaScript">
                     <img src="assets/images/html.png" alt="JavaScript">
@@ -64,9 +72,9 @@
 
         <section id="project" class="projects-block">
             <div class="container">
-                <h2>PROJECTS</h2>
+                <h2 class="wow animate__animated animate__fadeInUp">PROJECTS</h2>
 
-                <ul class="projects">
+                <ul class="projects wow animate__animated animate__fadeInUp">
                     <li>
                         <a href="#">
                             <img src="assets/images/project1.jpg" alt="Vintage Car">
@@ -91,9 +99,9 @@
 
         <section id="experience" class="experience-block">
             <div class="container">
-                <h2>EXPERIENCE</h2>
+                <h2 class="wow animate__animated animate__fadeInUp">EXPERIENCE</h2>
                 <ul class="experiences">
-                    <li>
+                    <li class="wow animate__animated animate__fadeInUp">
                         <div class="info">
                             <img src="assets/images/google-logo.png" alt="Google">
                             <h3>Lead Software Engineer at Google</h3>
@@ -104,7 +112,7 @@
                             dynamic team of engineers, I contributed to the enhancement of search accuracy and
                             efficiency, optimizing user experiences for millions of users worldwide.</p>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__fadeInUp">
                         <div class="info">
                             <img src="assets/images/apple-logo.png" alt="Google">
                             <h3>Junior Software Engineer at Apple</h3>
@@ -115,7 +123,7 @@
                             Responsible for designing scalable and efficient systems, I provided technical leadership to
                             a cross-functional team.</p>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__fadeInUp">
                         <div class="info">
                             <img src="assets/images/meta-logo.png" alt="Google">
                             <h3>Software Engineer at Meta</h3>
@@ -133,26 +141,23 @@
 
     <footer id="contact">
         <div class="container">
-            <h4>Contact</h4>
+            <h4 class="class=" wow animate__animated animate__fadeInUp"">Contact</h4>
 
-            <p>Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
+            <p class="class=" wow animate__animated animate__fadeInUp"">Seasoned Full Stack Software Engineer with over
+                8 years of hands-on experience in designing
                 and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
                 comprehensive skill set encompassing front-end and back-end technologies </p>
 
-            <a href="mailto:binaya.maharjan.dev@gmail.com" class="email"><i
-                    data-feather="mail"></i></span>binaya.maharjan.dev@gmail.com</a>
+            <a href="mailto:binaya.maharjan.dev@gmail.com" class="email class=" wow animate__animated
+                animate__fadeInUp""><i data-feather="mail"></i></span>binaya.maharjan.dev@gmail.com</a>
 
-            <ul class="social-icons">
+            <ul class="social-icons class=" wow animate__animated animate__fadeInUp"">
                 <li><a href="#"><i data-feather="instagram"></i></a></li>
                 <li><a href=""><i data-feather="x"></i></a></li>
                 <li><a href=""><i data-feather="youtube"></i></a></li>
             </ul>
         </div>
     </footer>
-    <script>
-        feather.replace();
-    </script>
-
     <script src="assets/js/app.js"></script>
 </body>
 

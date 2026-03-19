@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    feather.replace();
+
+    new WOW().init();
+
+    stickyNav();
+});
+
+function stickyNav() {
     const navLinks = document.querySelectorAll('a[href^="#"]');
-    console.log('lkjsdflkjsdf');
 
     navLinks.forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -20,4 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+}
