@@ -133,6 +133,7 @@ table {
 /** Project Stlyes **/
 :root {
     --primary: #F77F00;
+    --secondary: #531CB3;
     --light-dark: #1E1E1D;
     --dark: #161513;
 }
@@ -140,6 +141,24 @@ table {
 .container {
     max-width: 810px;
     margin: 0 auto;
+}
+
+.gradient-text {
+    /* 1. Define the gradient */
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+
+    /* 2. Clip the background to the text shapes */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 3. Make the actual text color transparent so the background shows through */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* Fallback */
+
+    /* Optional: Makes the text stand out */
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 body {
@@ -193,6 +212,11 @@ header .menu a {
 
 header .menu a:hover {
     color: var(--primary);
+}
+
+footer {
+    padding: 40px 0;
+    background-color: var(--light-dark);
 }
 
 footer h4 {
@@ -253,7 +277,8 @@ footer .email:hover {
     height: 210px;
     border-radius: 105px;
     overflow: hidden;
-    background-color: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    ;
 }
 
 .about-block .profile-image img {
@@ -362,7 +387,8 @@ footer .email:hover {
     background-color: var(--light-dark);
     /* Formula: (Total Width - Total Gaps) / Number of Columns */
     width: calc((100% - 30px) / 2);
-    flex-shrink: 0; /* Prevents items from squishing smaller than the calc */
+    flex-shrink: 0;
+    /* Prevents items from squishing smaller than the calc */
 }
 
 .projects img {
@@ -386,12 +412,12 @@ footer .email:hover {
 .experience-block h2 {
     font-size: 35px;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--secondary);
     text-align: center;
     margin-bottom: 55px;
 }
 
-.experiences li:not(:last-child){
+.experiences li:not(:last-child) {
     margin-bottom: 50px;
 }
 
